@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'input_page.dart';
+import 'results_page.dart';
 
 void main() {
   runApp(
@@ -9,6 +10,9 @@ void main() {
           scaffoldBackgroundColor: Colors.grey,
           accentColor: Colors.purple),
       home: InputPage(),
+      routes: {
+        '/results': (context) => ResultsPage(),
+      } ,
     ),
   );
 }
