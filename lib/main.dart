@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
-import 'results_page.dart';
+import 'screens/input_page.dart';
+import 'screens/results_page.dart';
 
 void main() {
   runApp(
     MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.grey[800],
-          scaffoldBackgroundColor: Colors.grey,
+          scaffoldBackgroundColor: Colors.black,
           accentColor: Colors.purple),
       home: InputPage(),
       routes: {
