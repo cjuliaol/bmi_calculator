@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../constants.dart';
 import '../components/reusable_card.dart';
 import '../components/icon_content.dart';
-import '../components/BottomButton.dart';
-import '../components/RoundIconButton.dart';
+import '../components/bottom_button.dart';
+import '../components/round_icon_button.dart';
 
 enum Gender { male, female }
 

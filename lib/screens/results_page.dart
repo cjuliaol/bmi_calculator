@@ -1,7 +1,7 @@
 import 'file:///C:/Users/cjuliaol/AndroidStudioProjects/bmi_calculator/lib/components/reusable_card.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
-import '../components/BottomButton.dart';
+import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   @override
