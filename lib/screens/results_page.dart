@@ -1,9 +1,17 @@
 import 'file:///C:/Users/cjuliaol/AndroidStudioProjects/bmi_calculator/lib/components/reusable_card.dart';
+import 'package:bmi_calculator/calculator_brain.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
+
+  final String bmiNumber;
+  final String result;
+  final String interpretation;
+
+  ResultsPage({this.bmiNumber, this.result, this.interpretation});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,12 +34,12 @@ class ResultsPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Text('Normal', style: kTitleTextStyle),
+                    Text(result, style: kTitleTextStyle),
                     Text(
-                      '18.0',
+                      bmiNumber,
                       style: kResultTextStyle,
                     ),
-                    Text('Your bmi results is blah blah blah',
+                    Text(interpretation,
                         style: kMessageTextStyle),
                   ],
                 ),
